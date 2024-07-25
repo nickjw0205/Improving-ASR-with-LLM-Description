@@ -1,0 +1,13 @@
+loralib
+tokenizers == 0.15.2
+datasets
+transformers==4.39.0
+huggingface-hub==0.23.2
+huggingface
+evaluate
+jiwer
+more_itertools
+editdistance
+av
+accelerate >= 0.21.0
+tensorboardX
