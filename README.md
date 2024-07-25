@@ -2,7 +2,7 @@
 --------------------------------------
 [[Paper]]()
 Accepted to INTERSPEECH 2024
-
+<!-- 
 ## Table of Contents
 1. [Abstract](#abstract)
 2. [Overview of our method](#overview-of-our-method)
@@ -10,11 +10,9 @@ Accepted to INTERSPEECH 2024
     - [Conda Environment](#conda-environment)
     - [Requirements](#requirements)
 4. [Run](#run)
-    - [OCW](#ocw)
-    - [Earnings Call](#earnings-call)
 5. [Results](#results)
     - [Base.en](#baseen)
-    - [Medium.en](#mediumen)
+    - [Medium.en](#mediumen) -->
 
 ## Abstract
 End-to-end automatic speech recognition (E2E ASR) systems have significantly improved speech recognition through training on extensive datasets. Despite these advancements, they still struggle to accurately recognize domain specific words, such as proper nouns and technical terminologies. To address this problem, we propose a method to utilize the state-of-the-art Whisper without modifying its architecture, preserving its generalization performance while enabling it to leverage descriptions effectively. Moreover, we propose two additional training techniques to improve the domain specific ASR: decoder fine-tuning, and context perturbation. We also propose a method to use a Large Language Model (LLM) to generate descriptions with simple metadata, when descriptions are unavailable. Our experiments demonstrate that proposed methods notably enhance domain-specific ASR accuracy on real-life datasets, with LLM-generated descriptions outperforming human-crafted ones in effectiveness.
@@ -26,6 +24,13 @@ End-to-end automatic speech recognition (E2E ASR) systems have significantly imp
 
 -------------
 
+### Dataset
+Earnings Call Dataset : [[link]](https://drive.google.com/file/d/13R44k-u5yoJ06dlg4LJsQM3bKWXBGvZG/view?usp=sharing)
+(original dataset: [[link]](https://github.com/GeminiLn/EarningsCall_Dataset/blob/master/README.md))
+
+OCW Dataset : [[link]](https://drive.google.com/file/d/17rZoXrldUkqI1GdeYtkIUr8hreAijl2f/view?usp=sharing)
+
+-------------
 ### Setup
 ##### Conda Environment
 ```
